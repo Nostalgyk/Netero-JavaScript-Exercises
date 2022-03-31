@@ -23,7 +23,7 @@
           </p>
         </div>
         <div class="two-blocks">
-          <p class="block-title">Resultado</p>
+          <p class="block-title">1º Resultado</p>
           <div class="ans-block">
             <button id="alert_01" onclick="callAlert()">
               Praise the alert!
@@ -40,7 +40,7 @@
           </p>
         </div>
         <div class="two-blocks">
-          <p class="block-title">Resultado</p>
+          <p class="block-title">2º Resultado</p>
           <div class="ans-block">
             <input
               type="text"
@@ -48,6 +48,14 @@
               id="input1"
               oninput="this.value = this.value.replace(/[^0-9.]/g, '').replace(/(\..*)\./g, '$1');"
             />
+            <p id="plus">+</p>
+            <input
+              type="text"
+              name="input2"
+              id="input2"
+              oninput="this.value = this.value.replace(/[^0-9.]/g, '').replace(/(\..*)\./g, '$1');"
+            />
+            <button id="calc" onclick="doSomeCalc()"></button>
           </div>
         </div>
       </div>
