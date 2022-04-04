@@ -48,14 +48,16 @@
               id="input1"
               oninput="this.value = this.value.replace(/[^0-9.]/g, '').replace(/(\..*)\./g, '$1');"
             />
-            <p id="plus">+</p>
+            <p>+</p>
             <input
               type="text"
               name="input2"
               id="input2"
               oninput="this.value = this.value.replace(/[^0-9.]/g, '').replace(/(\..*)\./g, '$1');"
             />
-            <button id="calc" onclick="doSomeCalc()"></button>
+            <button id="calc01" onclick="doSomeCalc()">Calcular</button>
+
+            <input type="text" id="ans-input" />
           </div>
         </div>
       </div>

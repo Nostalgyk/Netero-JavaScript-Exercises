@@ -3,10 +3,10 @@ function callAlert() {
 }
 
 function doSomeCalc() {
-  let txt1 = document.querySelector('input1');
-  let txt2 = document.querySelector('input2');
+  let txt1 = document.getElementById('input1').value;
+  let txt2 = document.getElementById('input2').value;
 
-  if(!txt1)
+  document.getElementById('ans-input').value = txt1 + txt2;
 
+  resultado = txt1 + txt2;
 }
-
