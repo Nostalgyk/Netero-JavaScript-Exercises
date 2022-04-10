@@ -14,6 +14,7 @@
   </header>
   <body>
     <div class="container">
+      <!--Exercício 01-->
       <div class="ex-block">
         <div class="two-blocks">
           <p class="block-title">1º Exercício:</p>
@@ -31,6 +32,8 @@
           </div>
         </div>
       </div>
+
+      <!--Exercício 02-->
       <div class="ex-block">
         <div class="two-blocks">
           <p class="block-title">2º Exercício:</p>
@@ -60,6 +63,8 @@
           </div>
         </div>
       </div>
+
+      <!--Exercício 03-->
       <div class="ex-block">
         <div class="two-blocks">
           <p class="block-title">3º Exercício:</p>
@@ -77,22 +82,38 @@
           </div>
         </div>
       </div>
+
       <div class="ex-block">
         <div class="two-blocks">
           <p class="block-title">4º Exercício:</p>
           <p class="ex-statement">
-            Faça um botão que, ao ser clicado, irá gerar um alert na página com
-            a mensagem: "Olá, mundo!"
+            No HTML, exiba a imagem de uma lâmpada, e ao clicar no botão, acenda
+            ou apague a mesma.
           </p>
         </div>
+
         <div class="two-blocks">
           <p class="block-title">Resultado</p>
           <div class="ans-block">
-            <button id="alert_01" onclick="callAlert()">
-              Praise the alert!
-            </button>
+            <div class="light">
+              <div class="light-bg">
+                <img
+                  src="https://cdn-icons.flaticon.com/png/512/2987/premium/2987972.png?token=exp=1649551341~hmac=3a6e030b484ffb60b95ccc9d84838177"
+                  id="bulb"
+                  alt="Lâmpada"
+                />
+                <div class="lightSwitch">
+                  <label class="switch">
+                    <input type="checkbox" onchange="turnOnOff()" id="switch" />
+                    <span class="slider round"> </span>
+                  </label>
+                </div>
+              </div>
+            </div>
           </div>
         </div>
+
+        <!--Exercício 05-->
       </div>
     </div>
   </body>
