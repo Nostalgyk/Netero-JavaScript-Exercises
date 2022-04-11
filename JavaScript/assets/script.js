@@ -47,3 +47,13 @@ function turnOnOff() {
       'https://cdn-icons.flaticon.com/png/512/2987/premium/2987972.png?token=exp=1649551341~hmac=3a6e030b484ffb60b95ccc9d84838177';
   }
 }
+
+document.getElementById('sec-bulb').addEventListener('mouseover', function () {
+  document.getElementById('sec-bulb').src =
+    'https://cdn-icons.flaticon.com/png/512/2988/premium/2988036.png?token=exp=1649559229~hmac=ee4a730a3435afa64768bf77f0057cc0';
+});
+
+document.getElementById('sec-bulb').addEventListener('mouseout', function () {
+  document.getElementById('sec-bulb').src =
+    'https://cdn-icons.flaticon.com/png/512/2987/premium/2987972.png?token=exp=1649551341~hmac=3a6e030b484ffb60b95ccc9d84838177';
+});
