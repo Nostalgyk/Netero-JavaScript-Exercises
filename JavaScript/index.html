@@ -47,19 +47,27 @@
           <div class="ans-block">
             <input
               type="text"
-              name="input1"
+              class="input"
               id="input1"
               oninput="this.value = this.value.replace(/[^0-9.]/g, '').replace(/(\..*)\./g, '$1');"
             />
             <p>+</p>
             <input
               type="text"
+              class="input"
               id="input2"
               oninput="this.value = this.value.replace(/[^0-9.]/g, '').replace(/(\..*)\./g, '$1');"
             />
-            <button id="calc01" onclick="doSomeCalc()">Calcular</button>
+            <button class="action-btn" id="calc01" onclick="doSomeCalc()">
+              Calcular
+            </button>
             <p>=</p>
-            <input type="text" id="ans-input" readonly="readonly" />
+            <input
+              type="text"
+              class="input"
+              id="ans-input"
+              readonly="readonly"
+            />
           </div>
         </div>
       </div>
@@ -76,9 +84,13 @@
         <div class="two-blocks">
           <p class="block-title">3º Resultado</p>
           <div class="ans-block">
-            <input type="text" id="ans-input2" />
-            <button id="text-Verify" onclick="verifyText()">Verificar</button>
-            <button id="text-clear" onclick="clearText()">Limpar</button>
+            <input type="text" class="input" id="ans-input2" />
+            <button class="action-btn" id="text-Verify" onclick="verifyText()">
+              Verificar
+            </button>
+            <button class="action-btn" id="text-clear" onclick="clearText()">
+              Limpar
+            </button>
           </div>
         </div>
       </div>
@@ -136,7 +148,42 @@
         </div>
         <div class="two-blocks">
           <p class="block-title">5º Resultado</p>
-          <div class="ans-block"></div>
+          <div class="ans-block">
+            <div class="two-columns">
+              <div>
+                <input
+                  maxlength="11"
+                  class="input"
+                  id="cpfUnfo"
+                  oninput="this.value = this.value.replace(/[^0-9.]/g, '').replace(/(\..*)\./g, '$1');"
+                />
+                <button class="action-btn" id="formataCPF">Formatar</button>
+                <input
+                  type="text"
+                  class="input"
+                  id="cpfFor"
+                  readonly="readonly"
+                />
+              </div>
+              <div>
+                <input
+                  maxlength="11"
+                  class="input"
+                  id="cpfForm"
+                  oninput="this.value = this.value.replace(/[^0-9.]/g, '').replace(/(\..*)\./g, '$1');"
+                />
+                <button class="action-btn" id="desformataCPF">
+                  Desformatar
+                </button>
+                <input
+                  type="text"
+                  class="input"
+                  id="cpfUnform"
+                  readonly="readonly"
+                />
+              </div>
+            </div>
+          </div>
         </div>
       </div>
     </div>

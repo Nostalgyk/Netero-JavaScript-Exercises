@@ -32,7 +32,7 @@ function verifyText() {
 }
 
 function clearText() {
-  document.getElementById('ans-input2').value = '';
+  document.getElementsByTagName('input').value = '';
 }
 
 //Exercício 04
@@ -57,3 +57,23 @@ document.getElementById('sec-bulb').addEventListener('mouseout', function () {
   document.getElementById('sec-bulb').src =
     'https://cdn-icons.flaticon.com/png/512/2987/premium/2987972.png?token=exp=1649551341~hmac=3a6e030b484ffb60b95ccc9d84838177';
 });
+
+//Exercício 05
+
+function formataCPF() {
+  let cpfUnfo = document.getElementById('cpfUnfo').value;
+
+  //retira os caracteres indesejados
+  cpf1 = cpfUnfo.replace(/[^\d]/g, '');
+
+  //realizar a formatação
+  let cpf = cpf1.replace(/(\d{3})(\d{3})(\d{3})(\d{2})/, '$1.$2.$3-$4');
+
+  document.getElementById('cpfFor').value = cpf;
+}
+
+document.getElementById('formataCPF').addEventListener('click', formataCPF);
+
+function desformataCPF() {
+  let cpfForm = document.getElementById('cpfForm').value;
+}

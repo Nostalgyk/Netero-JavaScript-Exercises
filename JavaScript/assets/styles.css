@@ -58,7 +58,7 @@
   cursor: pointer;
 }
 
-#input1, #input2, #ans-input{
+.input{
   background-color: rgb(240, 232, 232);
   border: 1px solid rgb(136, 1, 136);
   border-radius: 6px;
@@ -72,7 +72,7 @@
 }
 
 /*Exercicio 2*/
-#calc01{
+.action-btn{
   border-radius: 3px;
   border: 1px solid rgb(134, 133, 133);
   cursor: pointer;
@@ -87,15 +87,6 @@
   padding: 5px;
   margin: 0px 5px;
   width: 150px;
-}
-
-/*Exercicio 3*/
-#text-Verify, #text-clear{
-  border-radius: 3px;
-  border: 1px solid rgb(134, 133, 133);
-  cursor: pointer;
-  padding: 5px;
-  margin: 0px 5px;
 }
 
 /*Exercicio 4*/
@@ -176,5 +167,24 @@
   border-radius: 50%;
 }
 
+/*Exercício 05*/
+.two-columns{
+  display: flex;
+  flex-direction: column;
+  row-gap: 10px;
+}
+
+.two-columns>div{
+  display: flex;
+  justify-content: space-between;
+}
+
+.two-columns>div>input{
+  width: 105px;
+}
+
+.two-columns .action-btn{
+  padding: 5px 10px;
+}
 
 
